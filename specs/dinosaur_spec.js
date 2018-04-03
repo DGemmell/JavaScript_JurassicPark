@@ -3,14 +3,21 @@ var Dinosaur = require('../dinosaur.js');
 
 describe('Dinosaur', function(){
 
-  it('should have a type', function(){
-    var dinosaur = new Dinosaur();
-    assert.strictEqual(dinosaur.type, "Tyrannosaurus");
+  var dinosaur;
 
+  beforeEach(function () {
+		dinosaur = new Dinosaur({ type: 'Tyrannosaurus', offspring: 1});
+    // dinosaur2 = new Dinosaur({ type: 'Velociraptor', offspring: 2});
+    // dinosaur3 = new Dinosaur({ type: 'Triceratops', offspring: 4});
+	});
+
+  it('should have a type', function(){
+    assert.strictEqual(dinosaur.type, "Tyrannosaurus");
   });
 
+
+
   it('should have a number of offspring per year', function(){
-    var dinosaur = new Dinosaur();
     assert.strictEqual(dinosaur.offspring, 1);
   });
 
