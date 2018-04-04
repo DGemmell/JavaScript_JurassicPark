@@ -6,14 +6,14 @@ Park.prototype.empty = function() {
   this.enclosure = [];
 }
 Park.prototype.addDinosaur = function(item) {
-  this.enclosure.push(dinosaur);
+  this.enclosure.push(item);
 }
 
 Park.prototype.removeType = function(type) {
-  for (var dinosaur of this.dinosaur) {
+  for (var dinosaur of this.enclosure) {
     if (dinosaur.type === type) {
-      var index = this.dinosaur.indexOf(dinosaur);
-      this.dinosaur.splice(index, 1);
+      var index = this.enclosure.indexOf(dinosaur);
+      this.enclosure.splice(index, 1);
     }
   }
 }

@@ -1,14 +1,6 @@
-var Dinosaur = function () {
-  this.type = options.type;
-  this.offspring = options.offspring;
-}
-
-Dinosaur.prototype.type = function(){
-  this.type = "Tyrannosaurus"
-}
-
-Dinosaur.prototype.offspring = function(){
-  this.offspring = 1
+var Dinosaur = function (type, offspring) {
+  this.type = type;
+  this.offspring = offspring;
 }
 
 module.exports = Dinosaur;

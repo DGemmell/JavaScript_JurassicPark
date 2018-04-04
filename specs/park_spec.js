@@ -11,9 +11,9 @@ describe('Park', function () {
 
  beforeEach(function () {
     park = new Park();
-    dinosaur1 = new Dinosaur({ type: 'Tyrannosaurus', offspring: 1 });
-    dinosaur2 = new Dinosaur({ type: 'Velociraptor', offspring: 2 });
-    dinosaur3 = new Dinosaur({ type: 'Triceratops', offspring: 4});
+    dinosaur1 = new Dinosaur('Tyrannosaurus', 1);
+    dinosaur2 = new Dinosaur('Velociraptor', 2);
+    dinosaur3 = new Dinosaur('Triceratops',4);
   });
 
 
